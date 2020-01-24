@@ -2,6 +2,7 @@ const db = require('../database/dataconfig')
 
 function list(){
     return db('resources')
+        .select("resource")
 }
 
 function findById(id) {
